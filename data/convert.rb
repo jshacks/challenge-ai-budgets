@@ -1,4 +1,5 @@
 require 'csv'
+require 'json'
 
 def process_population
   population_data = CSV.read('./population.csv')
@@ -47,6 +48,8 @@ end
 population = process_population
 totals     = process_totals
 
+dataset = []
+
 CSV.open('dataset.csv', 'w') do |csv|
   42.times do |index|
     id = index + 1
@@ -55,8 +58,13 @@ CSV.open('dataset.csv', 'w') do |csv|
     county_totals     = totals[id]
 
     county_totals.each do |year, budget|
-      csv << [year, county_population[year], budget]
+      row = [year, county_population[year].to_i, budget.to_i]
+
+      csv << row
+
+      dataset.push(row)
     end
   end
 end
 
+File.write('dataset.js', "var dataset = #{dataset.to_json};\n")
