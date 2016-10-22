@@ -1,16 +1,15 @@
 "use strict";
 
 const bodyparser = require("body-parser");
-const cache = require("memory-cache");
 const express = require("express");
 var app = express();
+app.use(bodyparser.json());
 
+// FIXME: `categorii` e doar pentru generarea de date random
 const categorii = [
   "invatamant", "transporturi", "asigurari", "servicii", "dezvoltare publica",
   "cultura", "eco", "sanatate", "energie", "aparare", "altele"
 ];
-
-app.use(bodyparser.json());
 
 app.get("/:judet", (req, res) => {
   var bogus = {};
