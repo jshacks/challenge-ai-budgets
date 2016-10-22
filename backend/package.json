@@ -1,0 +1,32 @@
+{
+  "name": "bahoi-backend",
+  "version": "0.1.0",
+  "description": "The API for the Bahoi Urban Groove project",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jshacks/challenge-ai-budgets.git"
+  },
+  "keywords": [
+    "jshacks",
+    "oss",
+    "contributing",
+    "community",
+    "machine learning"
+  ],
+  "author": "Dragomir Ioan <123ioandargomir123@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jshacks/challenge-ai-budgets/issues"
+  },
+  "homepage": "https://github.com/jshacks/challenge-ai-budgets#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "ejs": "^2.5.2",
+    "express": "^4.14.0",
+    "memory-cache": "^0.1.6"
+  }
+}
