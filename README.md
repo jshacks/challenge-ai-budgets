@@ -35,8 +35,13 @@
 ## The team
 
 Constantinescu Eduard @idim98
+
 Garbea Marius @mariusgarbea
+
 Butan Liviu @burebistaxk
+
 Nitu Andrei @nituandrei
+
 Gusoi Codrut @sdwolf
+
 Dragomir Ioan @ianid
