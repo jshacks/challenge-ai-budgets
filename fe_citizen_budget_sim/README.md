@@ -15,7 +15,6 @@
 1. User accesses citizen_budget_sim.domain
 * eye candy page is displayed with 2 controls: 'choose county' (select) and 'go to next step':(button)
 2. On 'go to next step' button click
-Steps:
 * verify county to be selected, display alert if not
 * request budget data from BE using the selected county
 * redirect to page2:Budget Simulator
@@ -23,10 +22,11 @@ Steps:
 * user uses the slider widget to plan the budget, he is now the budget planner, btw, who plans the public budgets in Romania?
 * the prime minister is one click away
 3. on 'send my budget simulation to the prime minister' button click
-Steps:
 * redirect to page3:View result and share to facebook
 * display simulation result, same as page2, but with no edit control or sliders, and 'post simulation to the prime minister's facebook wall':(button)
-* use facebook's share dialog [1] to post on prime minister's wall
+* use [facebook's share dialog] to post on prime minister's wall
 * display thank you message
 
-[1] https://developers.facebook.com/docs/sharing/reference/share-dialog
+[facebook's share dialog]: https://developers.facebook.com/docs/sharing/reference/share-dialog
+
+
