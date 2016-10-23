@@ -58,7 +58,7 @@ CSV.open('dataset.csv', 'w') do |csv|
     county_totals     = totals[id]
 
     county_totals.each do |year, budget|
-      row = [year, county_population[year].to_i, budget.to_i]
+      row = [id, year, county_population[year].to_i, budget.to_i]
 
       csv << row
 
@@ -67,4 +67,10 @@ CSV.open('dataset.csv', 'w') do |csv|
   end
 end
 
-File.write('dataset.js', "var dataset = #{dataset.to_json};\n")
+File.write(
+  'dataset.js',
+  "
+  var dataset = #{dataset.to_json};\n
+  module.exports = dataset;
+  "
+)
