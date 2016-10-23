@@ -1,39 +1,42 @@
-# JSHacks Project
-
-[![Travis Build Status](https://travis-ci.org/jshacks/boilerplate.svg?branch=master)](https://travis-ci.org/jshacks/boilerplate)
-[![devDependency Status](https://david-dm.org/jshacks/boilerplate/dev-status.svg)](https://david-dm.org/jshacks/boilerplate?type=dev)
+# AI Budgets
 [![Join the Electron Community on Slack](http://159.203.166.178/badge.svg)](http://159.203.166.178)
 
+## Goal
 
-This is a boilerplate project to getting you started right away.
+1. Create a simple public budget simulator that educates and engages citizens in the budget process
 
-Follow [@JS_Hacks](https://twitter.com/js_hacks) on Twitter for important
-announcements.
-
-This project adheres to the Contributor Covenant [code of conduct](CODE_OF_CONDUCT.md).
-By participating, you are expected to uphold this code. Please report unacceptable
-behavior to contact@jshacks.io.
+2. Integrate it with banipublici.ro - deadline:asap
 
 
-## Documentation
+### Pages
+1. Welcome
+2. Budget Simulator
+3. View result and share to facebook
 
-Guides and the API reference are located in the
-[docs](https://github.com/jshacks/boilerplate/tree/master/docs) directory.
+### User usage steps
+1. User accesses citizenbudgetsim.domain
+  * eye candy page is displayed with 2 controls: 'choose county':(select) and 'go to next step':(button)
 
+2. On 'go to next step' button click
+  * verify county to be selected, display alert if not
+  * request budget data from BE using the selected county
+  * redirect to page2:Budget Simulator
+  * display simulator widget and a 'send my budget simulation to the prime minister':(button)
+  * user uses the slider widget to plan the budget, he is now the budget planner, btw, who plans the public budgets in Romania?
+  * the prime minister is one click away
+3. on 'send my budget simulation to the prime minister' button click
+  * redirect to page3:View result and share to facebook
+  * display simulation result, same as page2, but with no edit control or sliders, and 'post simulation to the prime minister's facebook wall':(button)
+  * use facebook's [share dialog] to post on prime minister's wall
+  * display thank you message
 
-## Quick Start
+[share dialog]: https://developers.facebook.com/docs/sharing/reference/share-dialog
 
+## The team
 
-## Community
-
-You can ask questions and interact with the community in the following
-locations:
-- [`jshacks`](http://159.203.166.178) channel on Slack
-
-
-## Documentation inspiration from
-Electron, Atom, contributor-covenant.org
-
-## License
-
-MIT © 2016
+Constantinescu Eduard @idim98
+Garbea Marius @mariusgarbea
+Butan Liviu @burebistaxk
+Nitu Andrei @nituandrei
+Gusoi Codrut @sdwolf
+Dragomir Ioan @ianid
