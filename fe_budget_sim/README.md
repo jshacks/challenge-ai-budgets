@@ -20,7 +20,7 @@
   * redirect to page2:Budget Simulator
   * display simulator widget and a 'send my budget simulation to the prime minister':(button)
   * user uses the slider widget to plan the budget, he is now the budget planner, btw, who plans the public budgets in Romania?
-  2.6 the prime minister is one click away
+  * the prime minister is one click away
 3. on 'send my budget simulation to the prime minister' button click
   * redirect to page3:View result and share to facebook
   * display simulation result, same as page2, but with no edit control or sliders, and 'post simulation to the prime minister's facebook wall':(button)
