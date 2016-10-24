@@ -26,14 +26,14 @@ class Welcome extends React.Component {
               <option value="Arges">Arges</option>
               <option value="Bacau">Bacau</option>
               <option value="Bihor">Bihor</option>
-              <option value="BistritaNasaud">Bistrita-Nasaud</option>
+              <option value="Bistrita-Nasaud">Bistrita-Nasaud</option>
               <option value="Botosani">Botosani</option>
               <option value="Braila">Braila</option>
               <option value="Brasov">Brasov</option>
               <option value="Bucuresti">Bucuresti</option>
               <option value="Buzau">Buzau</option>
               <option value="Calarasi">Calarasi</option>
-              <option value="CarasSeverin">Caras-Severin</option>
+              <option value="Caras-Severin">Caras-Severin</option>
               <option value="Cluj">Cluj</option>
               <option value="Constanta">Constanta</option>
               <option value="Covasna">Covasna</option>
