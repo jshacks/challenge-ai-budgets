@@ -1,0 +1,78 @@
+@import 'https://fonts.googleapis.com/css?family=Lato';
+
+body {
+  background-color: #2D3A4B;
+  font-family: 'Lato', sans-serif;
+  color: #E9E9E9;
+}
+
+.ct-label {
+  font-size: 15px;
+  color: white;
+}
+
+.ct-grids line {
+  stroke: white;
+}
+
+.text {
+  text-align: center;
+  font-size: 50px;
+  margin-top: 5vh;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;           /* Non-prefixed version, currently
+                                  not supported by any browser */
+}
+
+select {
+  margin: auto;
+  color: black;
+  margin-top: 80px;
+  margin-bottom: 20px;
+  width: 300px;
+  height: 40px;
+}
+
+.header {
+  position: absolute;
+  margin: auto;
+  padding-top: 5vh;
+  width: 100vw;
+}
+
+.centeredtextwrapper {
+  display: flex;
+  height: 100vh;
+}
+
+.centeredtext {
+  margin: auto;
+  width: 100vw;
+  padding: 5%;
+  font-size: 25px;
+}
+
+.button {
+  width: 300px;
+  height:40px;
+  background: #82B440;
+  margin-top: 20px;
+  border: 1px solid #414D5C;
+  outline: none;
+  font-size: 20px;
+  margin: auto;
+  display: block;
+}
+
+iframe {
+  display: block;
+  width: 75px;
+  margin: auto;
+}

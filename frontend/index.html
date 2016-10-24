@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Budget Rapperz</title>
+</head>
+<body>
+  <div id="app"></div>
+  <script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+  <script src="index.js"></script>
+  <script>
+    var parti = ['Invatamant', 'Transporturi', 'Asigurari', 'Servicii', 'Dezvoltare',
+                'Cultura', 'Ecologie', 'Sanatate', 'Energie', 'Aparare', 'Altele'];
+    var activeBar, bars, gridTop, gridBottom;
+    document.addEventListener("mousemove", (evt) => {
+      if(activeBar) {
+        document.body.style.cursor = "ns-resize";
+        var newSVGTop = evt.clientY - document.getElementsByTagName("svg")[0].getBoundingClientRect().top;
+        if(newSVGTop < gridTop) newSVGTop = gridTop;
+        if(newSVGTop > gridBottom) newSVGTop = gridBottom;
+        bars[activeBar].y2.baseVal.value = newSVGTop;
+        console.log((gridBottom - newSVGTop)/(gridBottom - gridTop)*1000);
+        document.getElementsByClassName("ct-label ct-horizontal")[activeBar].innerHTML = parti[activeBar]+" <br/> "+
+          Math.floor((gridBottom - newSVGTop)/(gridBottom - gridTop)*1000)+" mld";
+      }
+    }, false);
+    document.addEventListener("mouseup", () => {activeBar = null;document.body.style.cursor = "initial";}, false)
+    var k = () => {
+      gridTop = document.getElementsByClassName("ct-grids")[0].firstChild.y1.baseVal.value;
+      gridBottom = document.getElementsByClassName("ct-grids")[0].firstChild.y2.baseVal.value;
+      bars = document.getElementsByClassName("ct-series")[0].getElementsByTagName("line");
+      for(var i=0; i<bars.length; i++) {
+        bars[i].onmousedown = Function("activeBar = " + i);
+      }
+    }
+    setTimeout(k, 1000);
+  </script>
+</body>
+</html>

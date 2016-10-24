@@ -1,0 +1,77 @@
+<html>
+  <head>
+    <style>
+      .chart-container {
+        width:  600px;
+        height: 600px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="chart-container">
+      <canvas id="myChart" width="400" height="400"></canvas>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.min.js"></script>
+    <script>
+      var dataset = [[1999,4797498668.788376],[2000,4799916678.652012],[2001,4802334688.515648],[2002,4804752698.379282],[2003,4807170708.242918],[2004,4809588718.106554],[2005,4812006727.970188],[2006,4814424737.833824],[2007,4816842747.69746],[2008,4819260757.561096],[2009,4821678767.42473],[2010,4824096777.288366],[2011,4826514787.152002],[2012,4828932797.015636],[2013,4831350806.879272],[2014,4833768816.7429085],[2015,4836186826.6065445],[2016,4838604836.470179],[2017,4841022846.333815],[2018,4843440856.197451]]
+
+      var labels     = dataset.map(function (element) { return element[0];})
+      // var population = dataset.map(function (element) { return element[1];})
+      // var budgets    = dataset.map(function (element) { return element[2];})
+      var budgets    = dataset.map(function (element) { return element[1];})
+      var colors     = budgets.slice(0, -3)
+        .map(function (element) { return 'blue'})
+      var data   = {
+        labels: labels,
+        datasets: [
+          // {
+          //   type: 'line',
+          //   data: population,
+          //   borderColor: 'orange',
+          //   label:'population',
+          //   yAxisID: 'y-axis-1'
+          // },
+          {
+            type:            'bar',
+            data:            budgets,
+            label:           'Bucharest',
+            backgroundColor: colors,
+            yAxisID:         'y-axis-2',
+          }
+        ],
+      }
+
+      var canvas = document.getElementById('myChart').getContext('2d')
+
+      var myBarChart = new Chart(canvas, {
+          type: 'bar',
+          data: data,
+          options: {
+            scales: {
+              yAxes: [
+                // {
+                //   type: "linear",
+                //   display: true,
+                //   position: "right",
+                //   id: "y-axis-1",
+                // },
+                {
+                  type: "linear",
+                  display: true,
+                  position: "left",
+                  id: "y-axis-2",
+                  // ticks: {
+                  //   min: 0
+                  // },
+                  gridLines: {
+                      drawOnChartArea: false
+                  }
+                }
+              ]
+            }
+          }
+      });
+    </script>
+  </body>
+</html>

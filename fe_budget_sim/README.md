@@ -1,30 +1,16 @@
-# AI Budgets
-[![Join the Electron Community on Slack](http://159.203.166.178/badge.svg)](http://159.203.166.178)
-
-
-
 # Goal
 
 1. Create a simple public budget simulator that educates and engages citizens in the budget process
 
 2. Integrate it with banipublici.ro - deadline:asap
 
-# Hackaton v1 result
-[Presentation slides](https://docs.google.com/presentation/d/1kjhtl7SxouXlG2X1HIp-8C31UbaMygVKr8894bvLB5o/edit#slide=id.g138bd07ed6_11_0)
 
-
-# Hackaton specs
-
-## Machine Learning Engine
-< codeRutz > will fill this soon
-
-## Web app - Simulator Buget
-### Pages
+## Pages
 1. Welcome
 2. Budget Simulator
 3. View result and share to facebook
 
-### User usage steps
+## User usage steps
 1. User accesses citizenbudgetsim.domain
   * eye candy page is displayed with 2 controls: 'choose county':(select) and 'go to next step':(button)
 
@@ -43,16 +29,3 @@
 
 [share dialog]: https://developers.facebook.com/docs/sharing/reference/share-dialog
 
-## The team
-
-Constantinescu Eduard @idim98
-
-Garbea Marius @mariusgarbea
-
-Butan Liviu @burebistaxk
-
-Nitu Andrei @nituandrei
-
-Gusoi Codrut @sdwolf
-
-Dragomir Ioan @ianid
