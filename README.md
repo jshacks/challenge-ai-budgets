@@ -45,7 +45,7 @@
 
 ## The team
 
-Constantinescu Eduard @idim98
+Constantinescu Eduard @edim98
 
 Garbea Marius @mariusgarbea
 
