@@ -45,14 +45,14 @@
 
 ## The team
 
-Constantinescu Eduard @edim98
+Constantinescu Eduard [@edim98](http://github.com/edim98)
 
-Garbea Marius @mariusgarbea
+Garbea Marius [@mariusgarbea](http://github.com/mariusgarbea)
 
-Butan Liviu @burebistaxk
+Butan Liviu [@burebistaxk](http://github.com/burebistaxk)
 
-Nitu Andrei @nituandrei
+Nitu Andrei [@nituandrei](http://github.com/nituandrei)
 
-Gusoi Codrut @sdwolf
+Gusoi Codrut [@sdwolf](http://github.com/sdwolf)
 
-Dragomir Ioan @ianid
+Dragomir Ioan [@ianid](http://github.com/ianid)
