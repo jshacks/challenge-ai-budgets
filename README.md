@@ -1,11 +1,8 @@
 # AI Budgets
-[![Join the Electron Community on Slack](http://159.203.166.178/badge.svg)](http://159.203.166.178)
-
-
 
 # Goal
 
-1. Create a simple public budget simulator that educates and engages citizens in the budget process
+1. Create a simple public budget simulator that educates and engages citizens in the budgeting process
 
 2. Integrate it with banipublici.ro - deadline:asap
 
